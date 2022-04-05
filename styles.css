@@ -14,10 +14,17 @@
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 15px 0;
-    background: crimson;
+    padding: 30px 0;
+    /* background: crimson; */
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
 }
+.navbar.sticky {
+    padding: 30px 0;
+    background: crimson;
+}
+
+
 .navbar .max-width {
     display: flex;
     align-items: center;
@@ -28,6 +35,10 @@
     font-size: 35px;
     font-weight: 600;
 }
+.navbar .logo a span { 
+    color: crimson;
+}
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -38,11 +49,42 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3 ease;
+}
+.navbar .menu li a:hover {
+    color: crimson;
 }
 /* home section styling */
 .home {
     display: flex;
     background: url(/assets/workout2.jpg) no-repeat center;
     height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
 
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    color: lightgray;
+    
+}
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: lightslategrey ;
+    font-weight: 600;
 }
