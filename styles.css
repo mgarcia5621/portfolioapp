@@ -63,13 +63,23 @@
 .navbar.sticky .menu li a:hover {
     color: white;
 }
+
+/* menu btn styling */
+
+.menu-btn {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
 /* home section styling */
 .home {
     display: flex;
     background: url(/assets/workout2.jpg) no-repeat center;
     height: 100vh;
     background-size: cover;
-    
     color: white;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
@@ -98,4 +108,36 @@
 .home .home-content .text-3 span {
     color: lightslategrey ;
     font-weight: 600;
+}
+
+/* responsive media query start */
+
+@media (max-width: 947px) {
+    
+    .max-width {
+        padding: 0 80px;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 24px;
+
+    }
 }
