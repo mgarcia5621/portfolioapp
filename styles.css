@@ -123,6 +123,26 @@
 }
 
 
+/* about section styling  */
+
+.about {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+
+
+
 .home .home-content a:hover {
     color: rgb(245, 245, 245);
     background: none;
@@ -211,6 +231,7 @@
     .home .home-content .text-2 {
         font-size: 40px;
     }
-    .home .home-content .text-{
-        font-size: 28px;
+    .home .home-content .text-3 {
+        font-size: 20px;
+    }
 }
