@@ -110,6 +110,25 @@
     font-weight: 600;
 }
 
+.home .home-content a {
+    display: inline-block;
+    background: rgb(138, 9, 35);
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(138, 9, 35);
+    transition: 0.3s ease;
+}
+
+
+.home .home-content a:hover {
+    color: rgb(245, 245, 245);
+    background: none;
+
+}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .home .max-width {
@@ -169,13 +188,29 @@
     .home .home-content .text-3 {
         font-size: 35px;
     }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
 }
 
 @media (max-width: 690px) {
+    .home .home-content a {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
   .home .home-content .text-2 {
         font-size: 60px;        
     }
     .home .home-content .text-3 {
         font-size: 32px;
     }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 40px;
+    }
+    .home .home-content .text-{
+        font-size: 28px;
 }
