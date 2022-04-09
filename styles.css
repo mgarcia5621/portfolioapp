@@ -14,6 +14,7 @@
 .navbar {
     position: fixed;
     width: 100%;
+    z-index: 999;
     padding: 30px 0;
     /* background: crimson; */
     font-family: 'Ubuntu', sans-serif;
@@ -165,7 +166,25 @@ section {
     background: white;
     transform: translateX(-50%);
 }
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .column-right {
+     width: 55%;
+     
+}
 
+.about .about-content .column-left {
+    width:60%;
+}
+.about .about-content .column-right .text{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
 .about .about-content .column-left img{
     height: 400px;
