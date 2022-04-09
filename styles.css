@@ -125,23 +125,51 @@
 
 /* about section styling  */
 
+section {
+    padding: 100px 0;
+}
+
+
 .about {
     font-family: 'Poppins', sans-serif;
 }
 
 .about .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.about .title::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    bottom: -7px;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
 
 .about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
 }
-
-
-
-
 
 .home .home-content a:hover {
     color: rgb(245, 245, 245);
@@ -235,3 +263,4 @@
         font-size: 20px;
     }
 }
+
