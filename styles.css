@@ -37,11 +37,11 @@
     font-weight: 600;
 }
 .navbar .logo a span { 
-    color: crimson;
+    color: white;
     transition: all 0.3s ease;
 }
 
-.navbar .sticky .logo span a {
+.navbar .sticky .logo a span {
     color: white;
     transition: all 0.3s ease;
 }
@@ -113,7 +113,7 @@
 
 .home .home-content a {
     display: inline-block;
-    background: rgb(138, 9, 35);
+    /* background: rgb(138, 9, 35); */
     color: white;
     font-size: 25px;
     padding: 12px 36px;
