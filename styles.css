@@ -123,19 +123,14 @@
     transition: 0.3s ease;
 }
 
+/* all simliar content styling code */
 
-/* about section styling  */
-
-section {
+.section {
     padding: 100px 0;
 }
 
 
-.about {
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .title {
+.section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -144,7 +139,7 @@ section {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about .title::before {
+.section .title::before {
     content: "";
     position: absolute;
     width: 180px;
@@ -155,8 +150,8 @@ section {
     transform: translateX(-50%);
 }
 
-.about .title::after {
-    content: "Who am I?";
+.section .title::after {
+    /* content: "Who am I?"; */
     position: absolute;
     bottom: -35px;
     left: 50%;
@@ -165,6 +160,15 @@ section {
     color: crimson;
     background: white;
     transform: translateX(-50%);
+/* about section styling  */
+
+
+.about .services {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title::after {
+    content: " who I am";
 }
 .about .about-content{
     display: flex;
@@ -333,3 +337,8 @@ section {
     }
 }
 
+/* services section styling */
+
+.services .title::after{
+    content: "What I provide";
+}
