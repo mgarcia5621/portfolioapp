@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Ubunto',;
 }
 .max-width {
     max-width: 1300px;
@@ -160,8 +161,8 @@
     color: crimson;
     background: white;
     transform: translateX(-50%);
-/* about section styling  */
 
+/* about section styling */
 
 .about .services {
     font-family: 'Poppins', sans-serif;
@@ -197,6 +198,7 @@
     text-align: justify;
 }
 
+
 .about .about-content .column-right a {
      display: inline-block;
     background: rgb(138, 9, 35);
@@ -227,6 +229,16 @@
     background: none;
 
 }
+
+/* skills section styling */
+
+
+
+
+
+
+
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
